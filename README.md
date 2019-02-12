@@ -1,5 +1,7 @@
 # Bezirksregionenprofile deploy
 
+[![Build Status](https://travis-ci.org/technologiestiftung/bezirksregionenprofile-deploy.svg?branch=master)](https://travis-ci.org/technologiestiftung/bezirksregionenprofile-deploy)
+
 Automated deployment to AWS Elastic Beanstalk using travis and Docker
 
 ![diagram](/assets/diagram.png)
