@@ -1,0 +1,3 @@
+[submodule "bezirksregionenprofile"]
+	path = bezirksregionenprofile
+	url = git@github.com:technologiestiftung/bezirksregionenprofile.git

@@ -1,0 +1,21 @@
+version: '3'
+services:
+  client:
+    # ports:
+    #   - '3000:3000'
+    build:
+      context: ./bezirksregionenprofile
+      dockerfile: Dockerfile
+    environment:
+      # - PORT=3000
+      - HOST=0.0.0.0
+      # - NUXT_HOST=0.0.0.0
+      # - NUXT_PORT=3000
+  nginx:
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+
