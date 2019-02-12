@@ -24,3 +24,5 @@ docker-compose up --build
 Open [http://localhost:3000](http://localhost:3000)
 
 ### Deploy
+
+just push to master or merge into master

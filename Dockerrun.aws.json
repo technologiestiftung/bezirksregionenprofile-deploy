@@ -3,14 +3,14 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "fabianmoronzirfas/fibonacci-client",
+      "image": "technologiestiftung/bezirksregionenprofile-client",
       "hostname": "client",
       "essential": false,
       "memory": 128
     },
     {
       "name": "nginx",
-      "image": "fabianmoronzirfas/fibonacci-nginx",
+      "image": "technologiestiftung/bezirksregionenprofile-nginx",
       "hostname": "nginx",
       "essential": true,
       "memory": 128,

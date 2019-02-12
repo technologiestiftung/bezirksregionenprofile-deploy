@@ -1,4 +1,7 @@
 sudo: required
+branches:
+  only:
+  - master
 git:
   # depth: 50
   submodules: false
@@ -17,3 +20,16 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push technologiestiftung/bezirksregionenprofile-client
   - docker push technologiestiftung/bezirksregionenprofile-nginx
+
+deploy:
+  provider: elasticbeanstalk
+  region: eu-central-1
+  app: bezirksregionenprofile
+  env: Bezirksregionenprofile-env
+  bucket_name: elasticbeanstalk-eu-central-1-312231911072
+  bucket_path: bezirksregionenprofile
+  on:
+    branch: master
+  access_key_id: "$ACCESS_KEY_ID"
+  secret_access_key:
+    secure: "$SECRET_ACCESS_KEY"
