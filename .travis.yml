@@ -18,7 +18,7 @@ after_success:
   - docker build -t technologiestiftung/bezirksregionenprofile-client:generate ./client
   - docker build -t technologiestiftung/bezirksregionenprofile-nginx ./nginx
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push technologiestiftung/bezirksregionenprofile-client
+  - docker push technologiestiftung/bezirksregionenprofile-client:generate
   - docker push technologiestiftung/bezirksregionenprofile-nginx
 
 deploy:
