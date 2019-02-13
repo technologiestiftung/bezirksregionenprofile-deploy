@@ -5,7 +5,7 @@ services:
     #   - '3000:3000'
     build:
       context: ./bezirksregionenprofile
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     environment:
       # - PORT=3000
       - HOST=0.0.0.0

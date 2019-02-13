@@ -15,7 +15,7 @@ script:
   - echo "script"
 
 after_success:
-  - docker build -t technologiestiftung/bezirksregionenprofile-client ./client
+  - docker build -t technologiestiftung/bezirksregionenprofile-client:generate ./client
   - docker build -t technologiestiftung/bezirksregionenprofile-nginx ./nginx
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push technologiestiftung/bezirksregionenprofile-client

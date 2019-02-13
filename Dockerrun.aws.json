@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "technologiestiftung/bezirksregionenprofile-client",
+      "image": "technologiestiftung/bezirksregionenprofile-client:generate",
       "hostname": "client",
       "essential": false,
       "memory": 512
