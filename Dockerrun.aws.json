@@ -10,7 +10,7 @@
     },
     {
       "name": "nginx",
-      "image": "technologiestiftung/bezirksregionenprofile-nginx",
+      "image": "technologiestiftung/bezirksregionenprofile-nginx:latest",
       "hostname": "nginx",
       "essential": true,
       "memory": 128,
